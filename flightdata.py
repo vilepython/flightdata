@@ -19,10 +19,10 @@ Object for Flight Circle data processing
 class fc_data( object ):
     
     def __init__( self ):
-        pilot = ""
-        date = INVALID_DATE
-        hobbs = 0.0
-        tach = 0.0
+        self.pilot = ""
+        self.date = INVALID_DATE
+        self.hobbs = 0.0
+        self.tach = 0.0
 
 """
 Object for Flight Circle data processing
@@ -38,9 +38,9 @@ class fc_data_parser( object ):
     def __init__( self ):
         
         #Define members as empty strings
-        input_file = ""
-        output_file = ""
-        flights = []
+        self.input_file = ""
+        self.output_file = ""
+        self.flights = []
 
     """
     Parse file
